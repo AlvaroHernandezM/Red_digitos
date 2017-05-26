@@ -149,20 +149,47 @@ if __name__ == "__main__":
     print(neural_network_3.synaptic_weights," pesos para 3")
     print(neural_network_4.synaptic_weights," pesos para 4")
    
-
+    # Aprueba =     np.array([
+   #                 [0,0,1,0,0],
+  #                  [0,1,0,1,0],
+  #                  [1,0,0,0,1],
+  #                  [1,0,0,0,1],
+  #                  [1,1,1,1,1],
+  #                  [1,0,0,0,1],
+  #                  [1,0,0,0,1]
+  #                  ])
+    #C  prueba = np.array([
+   #             [1,1,1,1,1],
+   #             [1,0,0,0,0],
+   #             [1,0,0,0,0],
+   #             [1,0,0,0,0],
+   #             [1,0,0,0,0],
+   #             [1,0,0,0,0],
+    #            [1,1,1,1,1]
+    #        ])
+    #H prueba =     np.array([
+    #               [1,0,0,0,1],
+    #               [1,0,0,0,1],
+    #               [1,0,0,0,1],
+    #               [1,1,1,1,1],
+    #               [1,0,0,0,1],
+    #               [1,0,0,0,1],
+    #               [1,0,0,0,1]
+    #                ])
     prueba =     np.array([
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 1, 1, 1, 1]
+                   [0,1,1,1,0],
+                   [1,0,0,0,1],
+                   [1,0,0,0,1],
+                   [1,1,1,1,0],
+                   [1,0,0,0,0],
+                   [1,0,0,0,0],
+                   [1,0,0,0,0]
                     ])
+    
     prueba = np.reshape(prueba, 35)
 
     np.random.seed((int)(rn.randrange(0,1000)))
-    prueba = np.random.choice([0, 1], size=35)
+    #prueba = np.random.choice([0, 1], size=35)
 
     result = []
     # Pruebe la red neuronal con una situacion desconocida.
